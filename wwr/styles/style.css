@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -8,6 +10,9 @@ nav a{
     color: #EBEBEB;
 }
 
+#hero-img {
+    width: 100%;
+}
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
@@ -26,11 +31,16 @@ main section {
 
 body {
     background-color: 	#EBEBEB;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #59C3C3;
 }
+
+footer .social img {padding-top: 15px;}
 
 nav a:hover {
     background-color: 	#CAD2C5;
@@ -39,11 +49,7 @@ nav a:hover {
     
 }
 
-.book, .join {
-    background-color: #59C3C3;
-    color: #52489C
-    ;
-}
+
 
 .book:hover, .join:hover {
     background-color: 	#EBEBEB;
@@ -61,10 +67,15 @@ nav a:hover {
 footer {
     background-color: #59C3C3;
     color: #52489C;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: #52489C;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -73,9 +84,12 @@ h4 {
 
 .msg h2 {
     color: #52489C;
+    font-family: Roboto sans-serif ;
 }
 .msg p {
     color: #52489C;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a {
@@ -89,6 +103,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -102,15 +117,11 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }    
-
-.home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-}
      
 .msg {
     background-color: #bdeee3;
     line-height: 1.5em;
+    padding: 35px;
   }
 
   body {
@@ -120,8 +131,10 @@ footer p a:hover {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     margin: 0;
+    font-family: Ubuntu;    
 }
            
 nav a {
@@ -131,14 +144,6 @@ nav a {
     padding: 35px;
 }
 
-.book, .join {
-    background-color: #59C3C3;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-}
 
 .book, .join {
     background-color: #59C3C3;
@@ -150,9 +155,17 @@ nav a {
     border-radius: 5px;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
 .card-img {
     border: 10px solid #59C3C3;
 }
 main section img {
     box-sizing: border-box;
 }
+
+#logo_link {top: 5px;}
+
+

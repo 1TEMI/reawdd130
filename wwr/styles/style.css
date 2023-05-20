@@ -84,7 +84,7 @@ h4 {
 
 .msg h2 {
     color: #52489C;
-    font-family: Roboto sans-serif ;
+    font-family: Roboto serif;
 }
 .msg p {
     color: #52489C;
@@ -126,7 +126,7 @@ footer p a:hover {
 
   body {
     background-color: #fcfbfb;
-    font-family: Raleway, Arial, sans-serif;
+    font-family: Raleway, Arial, Helvetica;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -134,7 +134,7 @@ footer p a:hover {
 
 h2 {
     margin: 0;
-    font-family: Ubuntu;    
+    font-family: Ubuntu;
 }
            
 nav a {

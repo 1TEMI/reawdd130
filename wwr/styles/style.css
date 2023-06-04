@@ -40,7 +40,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: #59C3C3;
+    background-color: #59c3c3a3;
 }
 
 footer .social img {padding-top: 15px;}

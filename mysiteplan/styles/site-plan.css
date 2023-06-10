@@ -25,6 +25,41 @@ Fonts are separated by a | */
   --nav-hover-background-color: #fffffa;
 }
 
+.text {
+  text-align: left;
+}
+
+.page1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.page1 img {
+  height: 200px;
+}
+
+.page2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.page2 img {
+  height: 200px;
+}
+
+.page3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.page3 img {
+  height: 200px;
+}
+
+
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 

@@ -264,6 +264,7 @@ main.home-grid {
     transform: scale(1.1);
 }
   
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -293,6 +294,7 @@ main.home-grid {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
@@ -304,8 +306,8 @@ main.home-grid {
     footer {
         margin-top: 25px;
     }
-
-  } 
+    
+}
 
 /* ------------------------- ABOUT US PAGE ------------------------- */
 

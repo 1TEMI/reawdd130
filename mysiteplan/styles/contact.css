@@ -1,0 +1,130 @@
+/* Home Section */
+#home .home {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Header Section */
+#home .home header {
+  background: #000;
+  height: 3%;
+  display: flex;
+  align-items: center;
+}
+#home .home header .logo {
+  width: 150px;
+  height: 100px;
+}
+#home .home header .logo img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#home .home header nav {
+  width: 100%;
+}
+#home .home header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#home .home header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#home .home header nav ul li a:hover {
+  padding: 1rem 2rem;
+  background-color: var(--nav-hover-background-color);
+  color: var(--accent2-color);
+}
+
+/* home title */
+#home .home .home-msg {
+  color: var(--headline-color-on-color);
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  text-align: right;
+}
+#home .home .home-msg h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 7rem;
+  width: 900px;
+}
+
+#home .home .bg {
+  height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#home .home .bg img {
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+  z-index: -1;
+}
+
+/* Contact Section */
+#contact .contact {
+}
+#contact .contact .contact-header {
+  text-align: center;
+}
+#contact .contact .contact-header h2 {
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+
+
+
+#contact .contact .contact-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 50vh;
+}
+#contact .contact .contact-form .contact-msg a {
+  text-decoration: none;
+  color: #0d5c63;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+#contact .contact .contact-form .contact-msg a:hover{
+  color: #00bd9d;
+}
+#contact .contact .contact-form .contact-msg{
+  width: 50%;
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding: 0 2rem;
+}
+#contact .contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 10rem;
+  width: 20%;
+  font-size: 1rem;
+}
+#contact .contact form label{
+  font-size: 1.5rem;
+}
+#contact .contact form input,
+textarea {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  border:2px solid #0d5c63;
+  
+}

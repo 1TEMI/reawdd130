@@ -1,37 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono&family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@300&family=Rock+Salt&display=swap");
-:root {
-  --primary-color: #fffffa;
-  --secondary-color: #0d5c63;
-  --accent1-color: #00bd9d;
-  --accent2-color: #001242;
-  --heading-font: DynaPuff;
-  --paragraph-font: Lato, "Roboto Mono", sans-serif;
-  --headline-color-on-white: #001242;
-  --headline-color-on-color: #fffffa;
-  --paragraph-color-on-white: #001242;
-  --paragraph-color-on-color: #fffffa;
-  --paragraph-background-color: #0d5c63;
-  --nav-link-color: #fffffa;
-  --nav-background-color: #396e94;
-  --nav-hover-link-color: #396e94;
-  --nav-hover-background-color: #fffffa;
-}
-
-/* General Selector */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 1500px;
-  margin: 0 auto;
-}
 /* Home Section */
 #home .home {
   overflow: hidden;
@@ -39,6 +5,12 @@ body {
 }
 
 /* Header Section */
+#home .home header {
+  /* background: #000; */
+  height: 3%;
+  display: flex;
+  align-items: center;
+}
 #home .home header .logo {
   width: 150px;
   height: 100px;
@@ -48,12 +20,7 @@ body {
   height: 100%;
   cursor: pointer;
 }
-#home .home header {
-  background: #000;
-  height: 7%;
-  display: flex;
-  align-items: center;
-}
+
 #home .home header nav {
   width: 100%;
 }
@@ -72,7 +39,8 @@ body {
 }
 #home .home header nav ul li a:hover {
   padding: 1rem 2rem;
-  background-color: var(--accent1-color);
+  background-color: var(--nav-hover-background-color);
+  color: var(--accent2-color);
 }
 
 /* home title */
@@ -88,13 +56,103 @@ body {
   font-size: 7rem;
   width: 900px;
 }
+
 #home .home .bg {
-  height: 112vh;
+  height: 85vh;
   width: 100vw;
-  max-width: 100vw;
   overflow: hidden;
-  background: url(../images/computer-3174729_1280.jpg) no-repeat;
-  background-position: cover;
-  background-size: cover;
-  margin: -6.6% auto;
 }
+#home .home .bg img {
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -38%);
+  z-index: -1;
+}
+
+/* Product Card Section */
+#product .product {
+  background: #f0f0da81;
+}
+#product .product .product-header {
+  text-align: center;
+  padding: 3% 0;
+  width: 80vw;
+  margin: 0 auto;
+}
+#product .product .product-header h2 {
+  font-size: 2rem;
+}
+#product .product .product-header p {
+  line-height: 25px;
+  padding: 0.6rem 0;
+}
+#product .product .product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+#product .product .product-cards .product-card {
+  width: 300px;
+  height: 450px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 1rem;
+}
+#product .product .product-cards .product-card .product-img {
+  width: 290px;
+  height: 250px;
+  padding: 1rem;
+}
+#product .product .product-cards .product-card .product-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#product .product .product-cards .product-card .product-content {
+  padding: 1rem;
+}
+#product .product .product-cards .product-card .product-content h2 {
+  font-size: 1rem;
+}
+#product .product .product-cards .product-card .product-content > p {
+  padding: 1rem 0;
+}
+#product .product .product-cards .product-card .product-content .price {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Service Section */
+#services .services {
+  padding: 3rem 0;
+  background: #f0f0da81;
+}
+#services .services .service-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+#services .services h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+#services .services .service-content .service-content-left {
+  width: 50%;
+}
+#services .services .service-content .service-content-right {
+  width: 50%;
+}
+#services .services .service-content .service-content-left ul li,
+#services .services .service-content .service-content-right ul li {
+  padding: 1rem 0;
+}
+
+

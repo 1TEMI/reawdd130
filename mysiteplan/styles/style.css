@@ -1,37 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono&family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:wght@300&family=Rock+Salt&display=swap");
-:root {
-  --primary-color: #fffffa;
-  --secondary-color: #0d5c63;
-  --accent1-color: #00bd9d;
-  --accent2-color: #001242;
-  --heading-font: DynaPuff;
-  --paragraph-font: Lato, "Roboto Mono", sans-serif;
-  --headline-color-on-white: #001242;
-  --headline-color-on-color: #fffffa;
-  --paragraph-color-on-white: #001242;
-  --paragraph-color-on-color: #fffffa;
-  --paragraph-background-color: #0d5c63;
-  --nav-link-color: #fffffa;
-  --nav-background-color: #396e94;
-  --nav-hover-link-color: #396e94;
-  --nav-hover-background-color: #fffffa;
-}
-
-/* General Selector */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 1500px;
-  margin: 0 auto;
-}
 /* Home Section */
 #home .home {
   overflow: hidden;
@@ -136,7 +102,7 @@ body {
 }
 #tips .tips .tip-card {
   width: 300px;
-  height: 450px;
+  height: 400px;
   padding: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 10px;
@@ -187,30 +153,4 @@ body {
   font-size: 1rem;
   line-height: 25px;
 }
-/* Footer Section */
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7vh;
-  background: var(--accent2-color);
-  color: var(--headline-color-on-color);
-}
 
-footer p {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-footer .social-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-footer .social-links a i {
-  font-size: 2rem;
-}
-
-footer p:hover {
-  background: var(--accent1-color);
-  padding: 1rem 2rem;
-}

@@ -53,8 +53,9 @@
 }
 #home .home .home-msg h1 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 7rem;
+  font-size: 5rem;
   width: 600px;
+  
 }
 
 #home .home .bg {
@@ -68,9 +69,9 @@
   min-height: 100%;
   min-width: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -38%);
+  transform: translate(-50%, -40%);
   z-index: -1;
 }
 

@@ -81,11 +81,10 @@
 #product .product .product-header {
   text-align: center;
   padding: 3% 0;
-  width: 80vw;
   margin: 0 auto;
 }
 #product .product .product-header h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 #product .product .product-header p {
   line-height: 25px;
@@ -107,25 +106,26 @@
 #product .product .product-cards .product-card .product-img {
   width: 290px;
   height: 250px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 #product .product .product-cards .product-card .product-img img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 1pc;
 }
 #product .product .product-cards .product-card .product-content {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 #product .product .product-cards .product-card .product-content h2 {
   font-size: 1rem;
 }
 #product .product .product-cards .product-card .product-content > p {
   padding: 1rem 0;
+  font-size: 0.9em;
 }
 #product .product .product-cards .product-card .product-content .price {
-  display: flex;
-  align-items: flex-end;
+  font-weight: bold;
 }
 
 /* Service Section */
@@ -133,17 +133,18 @@
   padding: 3rem 0;
   background: #f0f0da81;
 }
+#services .services h2 {
+  text-align: center;
+  font-size: 3rem;
+}
 #services .services .service-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 2rem 0;
 }
-#services .services h2 {
-  text-align: center;
-  font-size: 2rem;
-}
+
 #services .services .service-content .service-content-left {
   width: 50%;
 }
@@ -153,6 +154,94 @@
 #services .services .service-content .service-content-left ul li,
 #services .services .service-content .service-content-right ul li {
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
+#services .services .service-content .service-content-left ul li strong,
+#services .services .service-content .service-content-right ul li strong {
+  font-size: 1.1rem;
+  color: #0d5c63;
+  cursor: pointer;
+}
+#services .services .service-content .service-content-left ul li strong:hover,
+#services .services .service-content .service-content-right ul li strong:hover {
+  color: #00bd9d;
+}
 
+/* Media Query*/
+@media screen and (max-width: 430px) {
+  /* Home Section */
+  /* Header Section */
+  #home .home header {
+    align-items: start;
+    flex-direction: column;
+  }
+  #home .home header nav ul {
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
+  #home .home header nav ul li a {
+    font-size: 1rem;
+  }
+  
+/* home title */
+#home .home .home-msg {
+  top: 50%;
+  text-align: right;
+}
+#home .home .home-msg h1 {
+  font-size: 2rem;
+  width: 300px;
+}
+  /* Product Card Section */
+
+  #product .product .product-header {
+    text-align: left;
+    padding-left: 2%;
+  }
+  #product .product .product-header h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #product .product .product-cards {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+  #product .product .product-cards .product-card {
+    height: 420px;
+  }
+  #product .product .product-cards .product-card .product-content > p {
+    font-size: 0.8em;
+  }
+  #product .product .product-cards .product-card .product-content .price {
+    font-size: 0.8rem;
+  }
+
+  /* Service Section */
+  #services .services {
+    padding: 2rem;
+  }
+  #services .services h2 {
+    font-size: 2rem;
+  }
+  #services .services .service-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #services .services .service-content .service-content-left {
+    width: 100%;
+  }
+  #services .services .service-content .service-content-right {
+    width: 100%;
+  }
+  #services .services .service-content .service-content-left ul li,
+  #services .services .service-content .service-content-right ul li {
+    font-size: 0.9rem;
+  }
+
+  #services .services .service-content .service-content-left ul li strong,
+  #services .services .service-content .service-content-right ul li strong {
+    font-size: 1rem;
+  }
+}

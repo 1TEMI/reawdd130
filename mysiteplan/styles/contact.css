@@ -6,7 +6,6 @@
 
 /* Header Section */
 #home .home header {
-  background: #000;
   height: 3%;
   display: flex;
   align-items: center;
@@ -53,8 +52,9 @@
 }
 #home .home .home-msg h1 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 7rem;
-  width: 900px;
+  font-size: 5rem;
+  width: 600px;
+  color: mintcream;
 }
 
 #home .home .bg {
@@ -76,6 +76,7 @@
 
 /* Contact Section */
 #contact .contact {
+  background: mintcream;
 }
 #contact .contact .contact-header {
   text-align: center;
@@ -85,15 +86,10 @@
   padding-top: 3rem;
 }
 
-
-
-
 #contact .contact .contact-form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80vw;
-  height: 50vh;
 }
 #contact .contact .contact-form .contact-msg a {
   text-decoration: none;
@@ -101,30 +97,105 @@
   font-weight: bold;
   font-size: 1.6rem;
 }
-#contact .contact .contact-form .contact-msg a:hover{
+#contact .contact .contact-form .contact-msg a:hover {
   color: #00bd9d;
 }
-#contact .contact .contact-form .contact-msg{
+#contact .contact .contact-form .contact-msg {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 30px;
   padding: 0 2rem;
 }
 #contact .contact form {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
-  padding: 10rem;
   width: 20%;
   font-size: 1rem;
 }
-#contact .contact form label{
-  font-size: 1.5rem;
+#contact .contact form label {
+  font-size: 1rem;
 }
 #contact .contact form input,
 textarea {
   width: 100%;
-  padding: 1.5rem 3rem;
-  border:2px solid #0d5c63;
-  
+  padding: 1rem 3rem;
+  border: 2px solid #0d5c63;
+  border-radius: 10px;
+}
+textarea {
+  padding: 1rem;
+}
+#contact .contact .contact-form form .button {
+  margin: 1rem 0;
+}
+#contact .contact .contact-form form .button .btn {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #00bd9d;
+  cursor: pointer;
+  font-weight: bold;
+}
+#contact .contact .contact-form form .button .btn:hover {
+  background-color: #00bd9d4f;
+  color: #0d5c63;
+}
+
+/* Media Query */
+@media screen and (max-width: 430px) {
+  /* Home Section */
+  /* Header Section */
+  #home .home header {
+    align-items: start;
+    flex-direction: column;
+  }
+  #home .home header nav ul {
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
+  #home .home header nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* home title */
+  #home .home .home-msg {
+    top: 50%;
+    text-align:left;
+  }
+  #home .home .home-msg h1 {
+    font-size: 2rem;
+    width: 300px;
+  }
+
+  /* home title */
+  #home .home .home-msg {
+    top: 50%;
+  }
+  #home .home .home-msg h1 {
+    font-size: 2rem;
+    width: 300px;
+  }
+  #home .home .home-msg h2 {
+    font-size: 1rem;
+    width: 200px;
+  }
+
+  /* Contact Section */
+  #contact .contact .contact-form {
+    flex-direction: column;
+  }
+  #contact .contact .contact-form .contact-msg a {
+    font-size: 1rem;
+  }
+
+  #contact .contact .contact-form .contact-msg {
+    width: 100%;
+  }
+  #contact .contact form {
+    width: 80%;
+    padding-top: 5%;
+  }
 }

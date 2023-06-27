@@ -15,7 +15,6 @@
   cursor: pointer;
 }
 #home .home header {
-  height: 7%;
   display: flex;
   align-items: center;
 }
@@ -71,9 +70,7 @@
 
 /* Tip Section */
 #tips {
-  height: 100vh;
-  /* background: #f4f3fd; */
-  /* background: #00bd9d; */
+  /* height: 100vh; */
   background: #001242be;
   color: var(--headline-color-on-color);
 }
@@ -120,22 +117,20 @@
   padding: 10px;
 }
 #tips .tips .tip-card .tips-content p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 20px;
 }
 
 /* Welcome Section */
-#welcome {
-}
 
 #welcome .welcome .welcome-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-  /* background: #f4f3fd; */
-  /* background: #00bd9d; */
   background: #001242be;
   color: var(--headline-color-on-color);
+  padding-top: 3%;
 }
 #welcome .welcome .welcome-grid .welcome-header {
   text-align: center;
@@ -154,3 +149,66 @@
   line-height: 25px;
 }
 
+/* Media Query */
+@media screen and (max-width: 430px) {
+  /* Home Section */
+  /* Header Section */
+  #home .home header {
+    align-items: start;
+    flex-direction: column;
+  }
+  #home .home header nav ul {
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
+  #home .home header nav ul li a {
+    font-size: 1rem;
+  }
+  
+  /* home title */
+  #home .home .home-msg {
+    top: 50%;
+  }
+  #home .home .home-msg h1 {
+    font-size: 2rem;
+    width: 300px;
+  }
+  #home .home .home-msg h2 {
+    font-size: 1rem;
+    width: 200px;
+  }
+  /* Tip Section */
+  #tips .tip-header {
+    padding: 3% 0%;
+  }
+  #tips .tip-header h2 {
+    font-size: 2rem;
+  }
+  #tips .tip-header p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  #tips .tips {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Welcome Section */
+  #welcome .welcome .welcome-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #welcome .welcome .welcome-grid .welcome-img img {
+    width: 290px;
+  }
+  #welcome .welcome .welcome-grid .welcome-header h2 {
+    font-size: 2rem;
+  }
+  #welcome .welcome .welcome-grid .welcome-content {
+    width: 300px;
+    padding-bottom: 2%;
+  }
+  #welcome .welcome .welcome-grid .welcome-content p {
+    font-size: 0.8rem;
+  }
+}

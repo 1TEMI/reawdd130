@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 #home .home header nav ul li a:hover {
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
   background-color: var(--nav-hover-background-color);
   color: var(--accent2-color);
 }

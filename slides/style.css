@@ -54,7 +54,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -64,7 +64,7 @@ img {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #000;
+  color: #000000d1;
   font-size: 4rem;
   font-weight: bold;
   padding: 8px 12px;

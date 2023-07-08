@@ -41,7 +41,7 @@
 
 /* home title */
 #home .home .home-msg {
-  color: var(--headline-color-on-color);
+  color: #00bd9d;
   position: absolute;
   top: 25%;
   left: 3%;
@@ -71,8 +71,8 @@
 /* Tip Section */
 #tips {
   /* height: 100vh; */
-  background: #001242be;
-  color: var(--headline-color-on-color);
+  background: #0d5c63;
+  color: #fffffa;
 }
 #tips .tip-header {
   display: flex;
@@ -128,8 +128,8 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
-  background: #001242be;
-  color: var(--headline-color-on-color);
+  background: #0d5c63;
+  color: #fffffa;
   padding-top: 3%;
 }
 #welcome .welcome .welcome-grid .welcome-header {

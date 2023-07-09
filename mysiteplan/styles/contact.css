@@ -31,7 +31,7 @@
 
 #home .home header nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fffffa;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -80,7 +80,7 @@
 }
 #contact .contact .contact-header {
   text-align: center;
-  color: #fff;
+  color: #fffffa;
 }
 #contact .contact .contact-header h2 {
   font-size: 2rem;
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #fff;
+  color: #fffffa;
 }
 #contact .contact .contact-form .contact-msg a {
   text-decoration: none;
